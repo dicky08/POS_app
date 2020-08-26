@@ -40,4 +40,4 @@ Keuntungan memakai Boostrap
 1. Lebih Flexsibel dan efisiensi waktu
 2. Sudah mendukung Responsive 
 
-Link Netlify: https://eloquent-volhard-6a6ce3.netlify.app/
+Link Netlify: vigilant-leavitt-feb7fb.netlify.app
