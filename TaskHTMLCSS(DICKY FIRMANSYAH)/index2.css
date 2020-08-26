@@ -98,7 +98,11 @@ span.badge {
 .food-items {
     display: inline-block;
     position: relative;
+}
 
+.food-items:hover {
+    background-color: rgba(182, 177, 177, 0.9);
+    transition: all .4s;
 }
 
 .card-img-top {
