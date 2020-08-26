@@ -1,5 +1,5 @@
 # POS_app
-Task HTML_CSS
+Point Of Sales
 
 Halo nama saya Dicky Firmansyah. Ini merupakan suatu project Point Of
 Sales yang dibuat menggunakan bahasa Makrup HTML dan Css digunakan untuk
