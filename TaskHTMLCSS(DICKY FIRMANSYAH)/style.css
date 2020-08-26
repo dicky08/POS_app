@@ -1,0 +1,241 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'airnb';
+    src: url('assets/font/airnb/AirbnbCerealLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'airnbBold';
+    src: url('assets/font/airnb/AirbnbCerealBold.ttf') format('truetype');
+}
+
+body {
+    font-family: 'airnb';
+}
+
+
+.header {
+    display: none;
+}
+
+.container-satu {
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container-satu img {
+    width: 30px;
+}
+
+.list,
+.nav-teks h5,
+.menu {
+    text-align: center;
+    line-height: 60px;
+    font-size: 25px;
+    font-family: 'airnbBold';
+    /* background-color: aquamarine; */
+}
+
+
+
+.menu-header {
+    display: none;
+}
+
+.menu img {
+    width: 30px;
+    margin-left: 27px;
+}
+
+.aside {
+    padding-top: 30px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebar {
+    width: 80px;
+}
+
+.content {
+    width: 100%;
+    padding-top: 30px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+
+.circle1 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    top: 10%;
+    right: 20%;
+    background: rgba(253, 211, 228, 0.3);
+    ;
+}
+
+.circle2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    top: 20%;
+    right: 30%;
+    background: rgba(253, 211, 228, 0.3);
+    ;
+}
+
+.circle3 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    top: 20px;
+    right: 40px;
+    background: rgba(253, 211, 228, 0.3);
+    ;
+}
+
+.card.shadow1 {
+    position: relative;
+    background: linear-gradient(278.29deg, #FBB2B4 30.05%, rgba(255, 143, 178, 0) 133.19%);
+
+    filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
+    ;
+    font-family: 'airnbBold';
+    border-radius: 10px;
+}
+
+.card.shadow2 {
+    position: relative;
+    font-family: 'airnbBold';
+    border-radius: 10px;
+    border-radius: 10px;
+    background: linear-gradient(278.29deg, #29DFFF 30.05%, rgba(41, 223, 255, 0) 133.19%);
+    ;
+}
+
+.card.shadow3 {
+    position: relative;
+    font-family: 'airnbBold';
+    background: linear-gradient(278.29deg, #AB84C8 30.05%, rgba(241, 201, 236, 0) 133.19%);
+    ;
+    filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
+    border-radius: 10px;
+}
+
+.income {
+    font-size: 30px;
+}
+
+.chart h3,
+.container h3,
+.table th {
+    font-family: 'airnbBold';
+}
+
+tbody {
+    font-family: 'airnb';
+}
+
+#month {
+    background-color: #979393;
+    margin-right: 60px;
+    border-radius: 10px;
+}
+
+/* Tablet */
+@media(max-width:992px) {
+    .container-satu {
+        position: relative;
+    }
+
+    .list {
+        width: 30px;
+        margin-left: 50px;
+        text-align: left;
+        box-sizing: border-box;
+    }
+
+    .nav-teks {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .menu-header {
+        width: 300px;
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-around;
+        position: absolute;
+        right: 350px;
+    }
+
+    .menu-header img {
+        width: 30px;
+        padding-top: 14px;
+    }
+
+    .content {
+        margin-left: 25px;
+    }
+
+    .income {
+        font-size: 26px;
+    }
+
+    .card-body .income {
+        font-size: 18px;
+    }
+}
+
+/* Phone */
+@media(max-width:768px) {
+    .container-satu {
+        display: none;
+    }
+
+    .header {
+        display: block;
+    }
+
+    .content .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card.shadow1,
+    .card.shadow2 {
+        margin-bottom: 10px;
+
+    }
+
+    .history-mobile {
+        margin-left: 33px;
+        font-family: 'airnbBold';
+    }
+
+    .navbar-nav {
+        margin-left: 33px;
+    }
+
+
+}
