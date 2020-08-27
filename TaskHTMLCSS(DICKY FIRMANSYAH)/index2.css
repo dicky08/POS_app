@@ -273,12 +273,12 @@ p.dua {
     /* Navbar */
     .menu {
         margin-left: -7px;
-        display: inline-block;
     }
 
     .tablet {
-        display: inline-block;
-        margin-left: -50px;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -130px;
     }
 
 
