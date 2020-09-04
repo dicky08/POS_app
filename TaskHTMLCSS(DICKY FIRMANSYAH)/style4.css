@@ -47,6 +47,10 @@ body {
   display: none;
 }
 
+.side img:hover {
+  cursor: pointer;
+}
+
 /* Galery */
 .galery {
   overflow: hidden;
@@ -85,18 +89,23 @@ body {
   font-family: "airnbBold";
 }
 
-/*  */
+/* Modal */
+.modal-title,
+.modal-body {
+  font-family: "airnbBold";
+}
+
+.add-btn,
+.cancel-btn {
+  width: 100px;
+}
+
 /* Break-Point */
 @media (max-width: 1024px) {
-  .img-cart {
-    height: 100vh;
-  }
-
   .menu-header {
     display: none;
   }
 
-  /* Sidebar Kiri */
   .sidebarKiri {
     height: 70px;
     position: fixed;
@@ -118,10 +127,19 @@ body {
     display: inline-block;
     margin-top: 8px;
   }
+
+  .img-cart {
+    height: 100vh;
+  }
+
 }
 
 /* Tablet */
 @media (max-width: 768px) {
+  body {
+    position: relative;
+  }
+
   .menu-header {
     display: none;
   }

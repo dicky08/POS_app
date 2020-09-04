@@ -1,0 +1,449 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "airnb";
+  src: url("assets/font/airnb/AirbnbCerealLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "airnbBold";
+  src: url("assets/font/airnb/AirbnbCerealBold.ttf") format("truetype");
+}
+
+body {
+  font-family: "airnb";
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Collapse */
+.navbar {
+  display: none;
+}
+
+/* Menu Header */
+.menu-header {
+  /* background-color: darkcyan; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 60px;
+  font-family: "airnbBold";
+}
+
+.menu,
+.text-header h4,
+.cart-header h4 {
+  line-height: 60px;
+}
+
+/* Sidebar Kiri */
+.sidebarKiri {
+  /* background-color: darkmagenta; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.side .search {
+  display: none;
+}
+
+/* Galery */
+.galery {
+  overflow: hidden;
+  background-color: rgba(190, 195, 202, 0.3);
+  padding-top: 10px;
+  /* margin-left: -0px; */
+}
+
+.card,
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+}
+
+.card img {
+  cursor: pointer;
+}
+
+img:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0.6;
+}
+
+.textcard {
+  margin-left: px;
+}
+
+.textcard p {
+  font-size: 18px;
+  margin-top: 3px;
+}
+
+.textcard h3 {
+  font-weight: bold;
+  margin-top: -15px;
+  font-size: 26px;
+}
+
+/* Cart Immage */
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart img:hover {
+  cursor: pointer;
+}
+
+.box {
+  width: 200px;
+}
+
+.cart-img img {
+  border-radius: 10px;
+}
+
+.box button.btn {
+  background-color: #82de3a;
+  width: 40px;
+  margin-top: -2px;
+}
+
+.box .btn-right {
+  margin-left: -4px;
+}
+
+.box input {
+  height: 30px;
+  margin-left: -4px;
+}
+
+.teks-food {
+  margin-left: 10px;
+  font-size: 18px;
+  font-family: "airnbBold";
+}
+
+.box {
+  margin-top: -14px;
+  width: 640px;
+  position: relative;
+}
+
+.box button {
+  width: 40px;
+  background-color: #82de3a;
+}
+
+.box input {
+  margin-left: -6px;
+  text-align: center;
+}
+
+.box .plus {
+  margin-left: -4px;
+  text-align: center;
+}
+
+.box p {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  font-size: 15px;
+}
+
+/* Checked */
+.active {
+  opacity: 0.4;
+}
+
+.card span {
+  cursor: pointer;
+  position: absolute;
+  font-size: 50px;
+  top: 80px;
+  left: 120px;
+}
+
+/* checkout */
+.checkout {
+  /* position: absolute; */
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "airnbBold";
+  /* background-color: darkorchid; */
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.checkout2 p {
+  font-family: "airnb";
+  padding-left: 15px;
+}
+
+.submit {
+  /* position: absolute; */
+  font-family: "airnb";
+  margin-left: 10px;
+  width: 460px;
+}
+
+.text-checkout p {
+  font-size: 22px;
+}
+
+.text-price h3 {
+  font-size: 24px;
+}
+
+.cart-order {
+  display: none;
+  position: fixed;
+  top: 400px;
+  left: 410px;
+  z-index: 999;
+  background-color: rgba(245, 31, 31, 0.8);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+/*  */
+/* Break-Point */
+@media (max-width: 1024px) {
+  .menu-header {
+    display: none;
+  }
+
+  /* SIDEBAR KIRI */
+  .sidebarKiri {
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgb(224, 220, 220);
+  }
+
+  .side {
+    line-height: 70px;
+  }
+
+  .side img {
+    width: 40px;
+    margin-top: -100px;
+  }
+
+  .carts {
+    display: none;
+  }
+
+  .side .search {
+    display: inline-block;
+    margin-top: 2px;
+  }
+
+  /* Cart-Img */
+  .galery {
+    height: 230vh;
+  }
+
+  .cart,
+  .checkout2 {
+    margin-left: 20px;
+  }
+
+  .cart img {
+    width: 150px;
+  }
+
+  .teks-food p {
+    font-size: 18px;
+  }
+
+  /* CHECKED */
+  .card span {
+    cursor: pointer;
+    position: absolute;
+    font-size: 50px;
+    top: 60px;
+    left: 100px;
+  }
+
+  /* Checkout */
+  .text-checkout h4,
+  .text-price h3 {
+    font-size: 20px;
+  }
+
+  .text-price {
+    margin-right: 185px;
+  }
+
+  /* SLIDES ORDER */
+  .box-cart {
+    position: relative;
+  }
+
+  .cart-order {
+    display: block;
+    position: absolute;
+    top: 270px;
+    left: 550px;
+  }
+
+  .carts {
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(230, 225, 225);
+    z-index: 2;
+    height: 250vh;
+    width: 100%;
+    overflow: scroll;
+    transform: translateY(-100%);
+    transition: all 1s;
+  }
+
+  .carts.slide {
+    transform: translateY(0);
+  }
+
+  .text-price {
+    margin-right: 285px;
+  }
+
+  .checkout2 {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .checkout {
+    width: 700px;
+  }
+
+  .shop {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .galery {
+    height: 350vh;
+  }
+
+  .menu-header {
+    display: none;
+  }
+
+  .sidebarKiri {
+    height: 70px;
+  }
+
+  .side {
+    line-height: 70px;
+  }
+
+  .carts {
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(230, 225, 225);
+    z-index: 2;
+    height: 350vh;
+    width: 100%;
+    overflow: scroll;
+    transform: translateY(-100%);
+    transition: all 1s;
+  }
+
+  .submit {
+    width: 500px;
+  }
+
+  /* Checked */
+  .card span {
+    cursor: pointer;
+    position: absolute;
+    font-size: 50px;
+    top: 80px;
+    left: 120px;
+  }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+  .galery {
+    height: 300vh;
+  }
+
+  .menu-header {
+    display: none;
+  }
+
+  .sidebarKiri {
+    display: none;
+  }
+
+  .phone {
+    width: 100%;
+  }
+
+  .navbar {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    font-family: "airnbBold";
+  }
+
+  /* Checked */
+  .card span {
+    cursor: pointer;
+    position: absolute;
+    font-size: 50px;
+    top: 60px;
+    left: 90px;
+  }
+
+
+
+  .cart,
+  .checkout2 {
+    margin-left: 0;
+  }
+
+  .cart-order {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 310px;
+  }
+
+  .carts.slide {
+    transform: translateY(0);
+  }
+
+  .text-checkout h4 {
+    font-size: 18px;
+  }
+
+  .text-price {
+    font-size: 16px;
+    margin-right: 30px;
+  }
+
+  .checkout {
+    width: 450px;
+  }
+
+  .submit {
+    margin-left: -5px;
+    padding-bottom: 50px;
+    width: 480px;
+  }
+}
